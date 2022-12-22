@@ -1,1 +1,13 @@
-// code your solution here
+// // code your solution here
+// const record = [
+//     { year: "2015", result: "W"},
+//     { year: "2014", result: "N/A"},
+//     { year: "2013", result: "L"},?
+
+const superbowlWin = (record) => {
+    return record.find((game) => {
+      return game.result === 'W';
+    }).year;
+  }
+  
+  console.log(superbowlWin(record)); 
